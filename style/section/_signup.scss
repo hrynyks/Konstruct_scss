@@ -1,0 +1,54 @@
+.signup {
+    padding: 30px 0;
+    margin-top: -2px;
+    background: #171819;
+
+    &-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        letter-spacing: 0.846154px;
+        font-size: 22px;
+        margin-right: 70px;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 20px;
+            margin-right: 50px;
+        }
+
+        @media screen and (max-width: 900px) {
+            font-size: 18px;
+            margin-right: 30px;
+        }
+
+        @media screen and (max-width: 700px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__inputs {
+        display: flex;
+    }
+
+    &__mail-area {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+        letter-spacing: 0.07px;
+        color: $main-color;
+
+        &:focus {
+            color: red;
+            border: 1px solid #00ff00;
+        }
+    }
+}
